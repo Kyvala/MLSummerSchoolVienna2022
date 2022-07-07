@@ -1,0 +1,37 @@
+# MD simulation for NNP water
+
+###############################################################################
+# INITIALIZATION
+###############################################################################
+units metal
+boundary p p p
+atom_style atomic
+timestep 0.0005
+thermo 1
+
+##############################################################################
+# SYSTEM DEFINTION
+##############################################################################
+read_data "initial_configuration.data"
+
+###############################################################################
+# SIMULATION SETTINGS / NNP POTENTIAL
+###############################################################################
+mass 1 1.00794
+mass 2 15.9994
+
+pair_style nnp dir nnp-data showew no showewsum 10 resetew yes maxew 100 cflength 1.8897261328 cfenergy 0.0367493254 emap "1:H,2:O"
+pair_coeff * * 6.36
+
+
+# INTEGRATOR
+fix INT all nve
+
+###############################################################################
+# RUN
+###############################################################################
+dump 1 all atom 5 traj.dump
+run 10000
+
+# Closing commands
+write_data final_configuration.data

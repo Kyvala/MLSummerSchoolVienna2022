@@ -1,1 +1,1 @@
-Excercises will be added soon.
+Follow nnp_tutorial.pdf 
