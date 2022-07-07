@@ -1,8 +1,8 @@
 
 ESI-DCAFM-TACO-VDSP Summer School on "Machine Learning for Materials Hard and Soft"
 =====================
+Day06_July18 and Day07_July19
 
-Public repository for the ESI-DCAFM-TACO-VDSP Summer School from the 11th of July to the 22nd of July. 
-Lecture and exercise material will be shared here. The schedule can be found as a PDF above.
+Follow docker_guide.pdf to install required software before summer school.
 
 More information coming soon!
