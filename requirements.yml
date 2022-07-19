@@ -1,0 +1,17 @@
+name: summer-school
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+- scikit-learn
+- numpy
+- matplotlib
+- jupyter
+- seaborn
+- pandas
+- scipy
+- mdanalysis
+- nglview
+- pip
+- pip:
+  - git+https://github.com/qmlcode/qml@develop
